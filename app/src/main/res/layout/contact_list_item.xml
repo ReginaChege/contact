@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8dp"
+    android:id="@+id/cvContact"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="104dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.214"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="195dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:text="Phone Number" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="203dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/ivAvatar"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber"
+            tools:text="Email Address" />
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="149dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/muvvingirl" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
