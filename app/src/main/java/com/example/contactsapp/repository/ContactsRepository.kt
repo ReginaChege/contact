@@ -12,7 +12,6 @@ class ContactsRepository {
     val database = ContactDb.getDataBase(MyContactsApp.appContext)
 
    suspend fun saveContact(contact:ContactData){
-//        switching to ui thread
         withContext(Dispatchers.IO){
             database.getContactDao().insertContact(contact)
         }
